@@ -5,6 +5,7 @@ import random as r
 
 # configs
 spacetime = 0.25
+waittime = 1
 enteringchat = '/'
 exitchat = 'Return'
 typespeed = 0.01
@@ -89,7 +90,7 @@ $$$$$$$$$$@Jbkkkkkkkkkkkkkkkk0kkkkkkkLmmmmmmwB$$$$$$$$$$$$$$
         triggerinpt = input(f"enter {trigger} ").upper()
 
         if triggerinpt == trigger:
-            t.sleep(1)
+            t.sleep(waittime)
             main()
         elif triggerinpt == "Q":
             break
